@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Chewy');
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "variables";
+
+body {
+  font-family: $font-family-base;
+  nav.navbar {
+    min-height: 100px;
+    background-color: $jumbotron-bg;
+    border: none;
+    .navbar-brand {
+      font-family: $font-family-navbrand;
+      font-size: 50px;
+    }
+  }
+  nav a {
+    font-size: 18px;
+    padding-top: 40px !important;
+    transition: all 0.3s ease;
+  }
+  > .jumbotron {
+    margin-top: 100px;
+  }
+  nav.navbar.shrink {
+    min-height: 35px;
+    .navbar-brand {
+      font-size: 25px;
+    }
+    a {
+      font-size: 15px;
+      padding-bottom: 10px !important;
+      padding-top: 15px !important;
+    }
+    .navbar-toggle {
+      margin: 8px 15px 8px 0;
+      padding: 4px 5px;
+    }
+  }
+}
