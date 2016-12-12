@@ -126,7 +126,7 @@ gulp.task('serve', ['styles', 'scripts', 'fonts'], () => {
   gulp.watch('bower.json', ['wiredep', 'fonts']);
 });
 
-gulp.task('serve:dist', () => {
+gulp.task('serve:dist',() => {
   browserSync({
     notify: false,
     port: 9000,
@@ -165,7 +165,7 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
+gulp.task('build', ['html', 'images', 'fonts', 'extras'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 

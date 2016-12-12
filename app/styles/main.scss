@@ -13,6 +13,7 @@ body {
     .navbar-brand {
       font-family: $font-family-navbrand;
       font-size: 50px;
+      padding-left: 150px;
     }
   }
   nav a {
@@ -27,6 +28,7 @@ body {
     min-height: 35px;
     .navbar-brand {
       font-size: 25px;
+      padding-left: 50px;
     }
     a {
       font-size: 15px;
