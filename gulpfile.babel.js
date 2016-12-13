@@ -11,7 +11,10 @@ const reload = browserSync.reload;
 
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+    .pipe(ghPages({
+      remoteUrl: 'https://github.com/gledsoncruz/gledsoncruz.github.io.git',
+      branch: 'master'
+    }));
 });
 
 gulp.task('styles', () => {

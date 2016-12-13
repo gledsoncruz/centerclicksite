@@ -1,8 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Oxygen');
-@import url('https://fonts.googleapis.com/css?family=Chewy');
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "variables";
+
+@font-face {
+  font-family: Oxygen;
+  src: url('../fonts/Oxygen-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Chewy;
+  src: url('../fonts/Chewy.ttf') format('truetype');
+}
+
+// #teste {
+//   padding:6px;
+//   border:3px solid #4a4c3f;
+//   animation: testebutton .5s ease-in-out infinite alternate;
+// }
+
+@keyframes anima-contato {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.09);
+    }
+}
 
 body {
   font-family: $font-family-base;
@@ -14,6 +37,12 @@ body {
       font-family: $font-family-navbrand;
       font-size: 50px;
       padding-left: 150px;
+    }
+    .navbar-nav li.contato-nav {
+      border:3px solid #4a4c3f;
+      animation: anima-contato .5s ease-in-out infinite alternate;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
   }
   nav a {
